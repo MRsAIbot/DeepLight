@@ -1,6 +1,8 @@
 # DeepLight
 This is the code for a research project during my MSc programme.
 
+Video at [http://youtu.be/4dutYbtEAyY](http://youtu.be/4dutYbtEAyY)
+
 # Dependencies
 
 * A CUDA-Enabled NVIDIA GPU
