@@ -1,0 +1,22 @@
+<additional>
+	<inductionLoop id="0" lane="0:1_0" pos="-37" freq="30" file="Loops.out"/>
+	<inductionLoop id="1" lane="0:1_1" pos="-40" freq="30" file="Loops.out"/>
+	<inductionLoop id="2" lane="0:1_0" pos="-85" freq="30" file="Loops.out"/>
+	<inductionLoop id="3" lane="0:1_1" pos="-85" freq="30" file="Loops.out"/>
+	<inductionLoop id="4" lane="0:1_1" pos="-6.8" freq="30" file="Loops.out"/>
+	<inductionLoop id="5" lane="3:1_0" pos="-46" freq="30" file="Loops.out"/>
+	<inductionLoop id="6" lane="3:1_1" pos="-46" freq="30" file="Loops.out"/>
+	<inductionLoop id="7" lane="3:1_0" pos="-100" freq="30" file="Loops.out"/>
+	<inductionLoop id="8" lane="3:1_1" pos="-100" freq="30" file="Loops.out"/>
+	<inductionLoop id="9" lane="5:1_0" pos="-35" freq="30" file="Loops.out"/>
+	<inductionLoop id="10" lane="5:1_0" pos="-70" freq="30" file="Loops.out"/>
+</additional>
+<!--Detector Count 7
+loop "12 x" 1 at 40.00 m on link 3:1  length 2.00
+loop "34 x" 2 at 46.00 m on link 0:1  length 2.00
+loop "5 x" 3 at 35.00 m on link 5:1  length 2.00
+loop "12 in" 4 at 85.00 m on link 3:1  length 2.00
+sloop "2 out" 5 at 6.81 m on link 3:1  length 2.00
+loop "34 in" 6 at 100.00 m on link 0:1  length 2.00
+loop "5 in" 7 at 70.00 m on link 5:1  length 2.00
+-->

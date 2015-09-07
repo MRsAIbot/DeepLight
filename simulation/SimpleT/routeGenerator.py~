@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+"""
+@file    routeGenerator.py
+@author  Simon Box
+@date    31/01/2013
+
+Code to generate a routes file for the "simpleT" SUMO model.
+
+"""
+
+import random
+
+routes = open("simpleT.rou.xml", "w")
+print >> routes, """<routes>
+<vType id="typeCar" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="25" guiShape="passenger"/>
+<vType id="typeBus" accel="0.8" decel="4.5" sigma="0.5" length="17" minGap="3" maxSpeed="25" guiShape="bus"/>
+
+<route id="eastSouth" edges="2:0 0:1 1:5 5:6" />
+<route id="eastWest" edges="2:0 0:1 1:3 3:7" />
+<route id="westSouth" edges="7:3 3:1 1:5 5:6" />
+<route id="westEast" edges="7:3 3:1 1:0 0:2" />
+<route id="southEast" edges="6:5 5:1 1:0 0:2" />
+<route id="southWest" edges="6:5 5:1 1:3 3:7" />
+"""
+
+lastVeh = 0
+vehNr = 0
+for i in range(N):
+if random.uniform(0,1) < pWE:
+    print >> routes, '    <vehicle id="%i" type="typeWE" route="right" depart="%i" />' % (vehNr, i)
+    vehNr += 1
+    lastVeh = i
+if random.uniform(0,1) < pEW:
+    print >> routes, '    <vehicle id="%i" type="typeWE" route="left" depart="%i" />' % (vehNr, i)
+    vehNr += 1
+    lastVeh = i
+if random.uniform(0,1) < pNS:
+    print >> routes, '    <vehicle id="%i" type="typeNS" route="down" depart="%i" color="1,0,0"/>' % (vehNr, i)
+    vehNr += 1
+    lastVeh = i
+print >> routes, "</routes>"
+routes.close()
+

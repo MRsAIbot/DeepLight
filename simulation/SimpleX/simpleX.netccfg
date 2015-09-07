@@ -1,0 +1,22 @@
+<configuration>
+    <input>
+        <node-files value="simpleX.nod.xml"/>
+        <edge-files value="simpleX.edg.xml"/>
+        <type-files value="simpleX.typ.xml"/>
+	<connection-files value="simpleX.con.xml"/>
+	<!--<tllogic-files value="simpleX.tll.xml"/>-->
+    </input>
+
+    <output>
+        <output-file value="simpleX.net.xml"/>
+    </output>
+    
+    <processing>
+       <no-turnarounds value="true"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</configuration>
